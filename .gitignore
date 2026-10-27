@@ -1,0 +1,32 @@
+.venv/
+__pycache__/
+.DS_Store
+
+# sweep data and derived files
+runs/
+stats/
+captures/
+logs/
+explorer/cache/connections.sqlite
+
+# third-party material
+source/
+ref/
+explorer/cache/agent/
+*.zip
+explorer/names.json
+explorer/*.local.md
+
+# packaging
+dist/
+build/
+NeuronExplorer.exe
+LCTNeuronExplorer.exe
+
+# installer-written settings: contain paths from the user's machine - never publish
+settings.json
+models/
+
+# local benchmark logs (history.jsonl is kept)
+bench/*.log
+bench/*.texts.json

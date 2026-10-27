@@ -1,0 +1,28 @@
+[project]
+name = "lct-neuron-explorer"
+version = "5.0.0"
+requires-python = ">=3.11"
+dependencies = [
+    "torch",
+    "transformers",
+    "safetensors",
+    "numpy",
+    "datasets",
+    "accelerate",
+    "fastapi>=0.146.0",
+    "uvicorn>=0.54.0",
+    "sentence-transformers>=6.1.0",
+    "umap-learn>=0.5.12",
+    "pywebview>=5.0",
+    "bitsandbytes>=0.50.2",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu130", marker = "sys_platform == 'win32'" },
+]
