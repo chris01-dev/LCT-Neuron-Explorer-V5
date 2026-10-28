@@ -11,10 +11,6 @@ Give it something like *"make it talk like a grumpy wizard"* and it tests neuron
 keeps the ones that actually work, and gives you back a recipe. It only calls a recipe verified if it
 still holds up on prompts it wasn't tuned on.
 
-It all runs on your own PC. No accounts, no telemetry, nothing sent to the cloud.
-
-(LCT = Loop Close Technology.)
-
 ## What's in it
 
 - A 3D map of Qwen3.5-4B where every dot is a real neuron. Hover one to see its vocabulary, click it
